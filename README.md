@@ -1,3 +1,12 @@
+![](logo.png)
+
+s_bootstrap
+=======================================
+
+Thème Undescore WordPress "BootStrapé".
+
+* * *
+
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
