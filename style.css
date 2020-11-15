@@ -1,0 +1,123 @@
+/*!
+Theme Name: s_bootstrap
+Theme URI: http://underscores.me/
+Author: bibibricodeur@gmail.com
+Author URI: https://github.com/bibibricodeur
+Description: bootstrap
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: s_bootstrap
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+s_bootstrap is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+@font-face {
+	font-family: ubuntu;
+	src: url(css/fonts/ubuntu/Ubuntu-Bold.ttf);
+}
+  
+html {
+	scroll-behavior: smooth;
+}
+
+/*
+* Navbar
+*/
+nav {
+	border-bottom: 12px solid #776617;
+	margin-bottom: 24px;    
+}
+.navbar-brand {
+	font-family: ubuntu;
+	font-size: 3rem;
+	letter-spacing: 6px;
+	font-weight: bold;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+	padding-left: 5rem;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*
+* Aside
+*/
+ul {
+	margin-left: -3rem;
+	list-style-type: none;
+}
+.my-4:first-child {
+	margin-top: 0rem !important;
+}
+.screen-reader-text {
+	display: none;
+}
+
+/*
+* Footer
+*/
+.blog-footer {
+	padding: 2.5rem 0;
+	color: #eee;
+	text-align: center;
+	background-color: #176677;
+	border-top: 12px solid #776617;
+}
+.blog-footer a {
+	color: #ccc;
+	transition: all 0.3s ease;
+}
+.blog-footer a:hover {
+	color: #1d89ff;
+}
+.blog-footer p:last-child {
+	margin-bottom: 0;
+}
+.comment-reply-title {
+	display: none;
+}
+/*
+* Général
+*/
+img {
+	display: block;
+	margin: 0 auto;
+}
+img, embed, object, video {
+	max-width: 100%;
+}
+pre {
+	white-space: pre-wrap; 
+}
+blockquote  {
+	font-style: italic;
+	margin-left: 32px;
+	font-family: ;
+	font-size: 18px;
+	border-left: 3px solid #777;
+	padding-left: 9px;
+}
+
+#boutonRemonter {
+	display: none;
+	position: fixed;
+	bottom: 90px;
+	right: 10px;
+	z-index: 99;
+}
+#boutonRemonter:hover {
+	transition-duration: 0.7s;
+	opacity: 0.3;
+}
+
+/* Fin */
