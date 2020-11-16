@@ -43,6 +43,7 @@
 
 <a href="#hautPage" class="btn btn-secondary" id="boutonRemonter" title="Clic pour remonter en haut de cette satanée page">Remonter</a>
 
+<script>hljs.initHighlightingOnLoad();</script>
 <script>      
 	window.onscroll = function () {
 	afficherBouton()

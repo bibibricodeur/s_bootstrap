@@ -45,6 +45,9 @@ nav {
 	padding-left: 5rem;
 }
 
+.updated {
+	display: none;
+}
 textarea {
 	width: 100%;
 }
