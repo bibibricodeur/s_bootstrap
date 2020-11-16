@@ -49,33 +49,35 @@ if ( post_password_required() ) {
 		</div><!-- .card-header -->
 
 		<div class="card-body">
-		<?php the_comments_navigation(); ?>
+			<?php the_comments_navigation(); ?>
 
-		<ol class="comment-list">
+			<ol class="comment-list">
+				<?php
+				wp_list_comments(
+					array(
+						'style'      => 'ol',
+						'short_ping' => true,
+					)
+				);
+				?>
+			</ol><!-- .comment-list -->
+
 			<?php
-			wp_list_comments(
-				array(
-					'style'      => 'ol',
-					'short_ping' => true,
-				)
-			);
-			?>
-		</ol><!-- .comment-list -->
+			the_comments_navigation();
 
+			// If comments are closed and there are comments, let's leave a little note, shall we?
+			if ( ! comments_open() ) :
+				?>
+				<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 's_bootstrap' ); ?></p>
+				<?php
+			endif;
+				?>
+		</div><!-- .card-body -->
 		<?php
-		the_comments_navigation();
 
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() ) :
-			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 's_bootstrap' ); ?></p>
-			<?php
-		endif;
+		endif; // Check for have_comments().
 
-	endif; // Check for have_comments().
-
-	comment_form();
+		comment_form();
 	?>
-	</div><!-- .card-body -->
 
 </div><!-- #comments -->
