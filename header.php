@@ -35,12 +35,12 @@
 				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 				<?php
 				wp_nav_menu( array(
-					'theme_location'    => 'primary',
+					'theme_location'    => 'primary-menu',
 					'depth'             => 2,
 					'container'         => 'div',
 					'container_class'   => 'collapse navbar-collapse',
 					'container_id'      => 'bs-example-navbar-collapse-1',
-					'menu_class'        => 'nav navbar-nav',
+					'menu_class'        => 'nav navbar-nav ml-auto',
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'            => new WP_Bootstrap_Navwalker(),
 				) );
