@@ -212,11 +212,34 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 /**
  * Ajouter favicon
  */
-function ajouter_favicon() {
+function s_bootstrap_favicon() {
     echo '<link rel="shortcut icon" type="image/png" href="'. get_template_directory_uri() .'/w-logo-blue.png" />';
 }
  
-add_action('wp_head', 'ajouter_favicon');
+add_action('wp_head', 's_bootstrap_favicon');
+
+/**
+ * https://www.youtube.com/watch?v=0q7oxrq1isI
+ * Ajouter pagination
+ */
+function s_bootstrap_pagination() {
+	echo '<nav aria-label="Pagination" class="my-4">';
+	echo '<ul class="pagination">';
+	$pages = paginate_links(['type' => 'array']);
+	foreach ( $pages as $page )  {
+		$active = strpos($page, 'current') !== false;
+		$class = 'page-item';
+		if ($active) {
+			$class .= ' active';
+		};
+		echo '<li class="' . $class . '">';
+		echo str_replace('page-numbers', 'page-link', $page);
+		echo '</li>';
+	};
+	#var_dump( $pages );
+	echo '</ul>';
+	echo '</nav>';
+}
 
 /**
  * https://www.wpbeginner.com/wp-tutorials/25-extremely-useful-tricks-for-the-wordpress-functions-file/

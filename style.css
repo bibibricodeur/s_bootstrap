@@ -51,6 +51,9 @@ html {
 textarea {
 	width: 100%;
 }
+.pagination {
+	justify-content: center !important;
+}
 
 /*
 * Aside
