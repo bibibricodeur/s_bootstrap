@@ -41,5 +41,25 @@
 
 <?php wp_footer(); ?>
 
+<a href="#hautPage" class="btn btn-secondary" id="boutonRemonter" title="Clic pour remonter en haut de cette satanée page">Remonter</a>
+
+<script>      
+	window.onscroll = function () {
+	afficherBouton()
+	};
+
+	function afficherBouton() {
+		
+		var elem = document.getElementById('boutonRemonter');
+		var nombrePixels = window.pageYOffset | document.body.scrollTop;
+		
+		if (nombrePixels > 360) {
+			elem.style.display = 'block';
+		} else if (nombrePixels <= 360) {
+			elem.style.display = 'none';
+		}
+	}
+</script>
+
 </body>
 </html>
