@@ -144,7 +144,7 @@ function s_bootstrap_scripts() {
 	 * Ajouter par bibi.
 	 */
 	wp_register_style( 'bootstrapCss', get_template_directory_uri() . '/vendor//bootstrap/css/bootstrap.min.css' );
-	wp_register_script( 'bootstrapJs', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.bundle.min.js', [], false, true );
+	wp_register_script( 'bootstrapJs', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.bundle.min.js', ['jquery'], false, true );
 	wp_register_style( 'highlightCss', get_template_directory_uri() . '/vendor/highlight/styles/rainbow.css' );
 	wp_register_script( 'highlightJs', get_template_directory_uri() . '/vendor/highlight/highlight.pack.js', [], false, true );
 	wp_enqueue_style( 'bootstrapCss' );

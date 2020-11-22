@@ -63,15 +63,17 @@ textarea {
 /*
 * Aside
 */
-ul {
-	margin-left: -3rem;
-	list-style-type: none;
-}
 .my-4:first-child {
 	margin-top: 0rem !important;
 }
 .screen-reader-text {
 	display: none;
+}
+
+.card-body > ul {
+	/*margin-left: -3rem;*/
+	list-style-type: none;
+	padding-inline-start: 15px !important;
 }
 
 /*
@@ -102,10 +104,10 @@ ul {
 */
 img {
 	display: block;
-	margin: 0 auto;
+	margin-right: 0 auto;
 }
 img, embed, object, video {
-	max-width: 100%;
+	max-width: 100% !important;
 }
 pre {
 	white-space: pre-wrap; 
