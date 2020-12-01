@@ -32,6 +32,11 @@
 				</div><!-- .site-info .col-md-8 -->
 
 				<div class="col-md-4">
+                    <?php if ( ! is_active_sidebar( 'sidebar-2' ) ) {
+                            return;
+                        }
+                        dynamic_sidebar( 'sidebar-2' );
+                    ?>
 				</div><!-- .col-md-4 -->
 
 			</div><!-- .row -->

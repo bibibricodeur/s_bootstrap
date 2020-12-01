@@ -60,6 +60,7 @@ textarea {
 #respond {
 	margin: 1em;
 }
+
 /*
 * Aside
 */
@@ -82,9 +83,23 @@ textarea {
 .blog-footer {
 	padding: 2.5rem 0;
 	color: #eee;
-	text-align: center;
+
 	background-color: #176677;
 	border-top: 12px solid #776617;
+}
+.blog-footer .site-info {
+	text-align: center;
+}
+.blog-footer h3 {
+    font-size: 1.5rem;
+    padding-left: 0.9rem;
+}
+.blog-footer ul {
+    padding-left: 0;
+}
+.blog-footer li {
+    list-style: none;
+    padding-left: 1.5rem;
 }
 .blog-footer a {
 	color: #ccc;

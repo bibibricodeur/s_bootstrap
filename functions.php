@@ -124,13 +124,24 @@ add_action( 'after_setup_theme', 's_bootstrap_content_width', 0 );
 function s_bootstrap_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 's_bootstrap' ),
+			'name'          => esc_html__( 'Sidebar aside', 's_bootstrap' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 's_bootstrap' ),
 			'before_widget' => '<div class="card my-4"><section id="%1$s" class="widget %2$s"><div class="card-header">',
 			'after_widget'  => '</div></section></div>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2></div><div class="card-body">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar footer', 's_bootstrap' ),
+			'id'            => 'sidebar-2',
+			'description'   => esc_html__( 'Add widgets here.', 's_bootstrap' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 }

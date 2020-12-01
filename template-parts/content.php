@@ -24,7 +24,7 @@
 				<div class="entry-meta">
 					<?php
 					s_bootstrap_posted_on();
-					s_bootstrap_posted_by();
+					//s_bootstrap_posted_by();
 					?>
 				</div><!-- .entry-meta -->
 			<?php endif; ?>
