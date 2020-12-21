@@ -27,7 +27,7 @@
 					<span class="sep"> | </span>
 						<?php
 						/* translators: 1: Theme name, 2: Theme author. */
-						printf( esc_html__( 'Theme: %1$s by %2$s.', 's_bootstrap' ), 's_bootstrap', '<a href="http://thiweb.fr">bibibricodeur@gmail.com</a>' );
+						printf( esc_html__( 'Theme: %1$s by %2$s.', 's_bootstrap' ), 's_bootstrap', '<a href="http://thiweb.fr">bibibricodeur(signe bizarre)gmail.com</a>' );
 						?>
 				</div><!-- .site-info .col-md-8 -->
 
