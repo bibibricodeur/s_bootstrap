@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area card mb-4">
+<div id="comments" class="comments-area card mb-3">
 
 	<?php
 	// You can start editing here -- including this comment!
@@ -37,7 +37,7 @@ if ( post_password_required() ) {
 						'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 					);
 				} else {
-					printf( 
+					printf(
 						/* translators: 1: comment count number, 2: title. */
 						esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $s_bootstrap_comment_count, 'comments title', 's_bootstrap' ) ),
 						number_format_i18n( $s_bootstrap_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

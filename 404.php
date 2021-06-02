@@ -11,7 +11,7 @@ get_header();
 ?>
 <div class="row">
 
-	<main id="primary" class="site-main col-md-8">
+	<main id="primary" class="site-main col-md-9">
 
 		<section class="error-404 not-found">
 			<header class="page-header">
